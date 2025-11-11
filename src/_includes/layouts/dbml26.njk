@@ -1,0 +1,97 @@
+{# src/_layouts/dbml26.njk #}
+<!doctype html>
+<html lang="en">
+  {% include "head.njk" %}
+  <body class="dbml">
+    <!-- Hero / Banner -->
+    <header id="banner252">
+      <!-- Navbar -->
+      <nav class="navbar fixed-top dbml-nav" role="navigation">
+        <div class="container">
+          <div class="row align-items-center no-gutters">
+            <div class="col-4 col-md-2">
+              <img
+                src="/assets/logo/DBML2026.svg"
+                alt="DBML 2026 logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-8 col-md-10">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#keynote" class="nav-link">Speakers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#program" class="nav-link">Program</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#important-dates" class="nav-link">Important Dates</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#guidelines" class="nav-link">Submission &amp; Author Guidelines</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#organisation" class="nav-link">Organisation</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Title -->
+      <div id="title" class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>5th International Workshop on Databases and Machine Learning</h1>
+          </div>
+          <div class="col-12 smaller-font">
+            <h4>
+              in conjunction with
+              <a href="https://icde2026.github.io/" target="_blank" rel="noopener">ICDE 2026</a>
+              &mdash; May 2026
+            </h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    {{ content | safe }}
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <p>&copy; DBML 2026</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Navbar color swap on scroll -->
+    <script>
+      (function () {
+        var navbar = document.querySelector('.fixed-top');
+        if (!navbar) return;
+
+        function onScroll() {
+          if (window.scrollY > 300) {
+            navbar.classList.add('nav-colored');
+            navbar.classList.remove('dbml-nav');
+          } else {
+            navbar.classList.add('dbml-nav');
+            navbar.classList.remove('nav-colored');
+          }
+        }
+
+        window.addEventListener('scroll', onScroll);
+        onScroll();
+      })();
+    </script>
+  </body>
+</html>
