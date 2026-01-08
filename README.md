@@ -7,4 +7,4 @@ The previous DBML workshop websites were integrated into the monorepo for TU Del
 1. Ensure that a recent version of nodejs is installed. 
 2. Run `npm install` at project root the install dependencies. 
 3. Run `npx @11ty/eleventy --serve` at project root to start a localhost server. This will build an updated static website at `/docs`. 
-4. Push the changes at `/docs` to GitHub. GitHub Pages serves the webstied from the `/docs` directory. 
+4. Push the changes at `/docs` to GitHub. GitHub Pages serves the website from the `/docs` directory. 
