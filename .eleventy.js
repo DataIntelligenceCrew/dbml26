@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
       layouts: "_includes/layouts",
       output: "_site"
     },
+    pathPrefix: process.env.ELEVENTY_ENV === 'production' ? '/dbml26/' : '/',
     templateFormats: ["njk", "html", "md"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk"

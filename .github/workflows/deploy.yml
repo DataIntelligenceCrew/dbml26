@@ -29,6 +29,8 @@ jobs:
 
       - name: Build site
         run: npx @11ty/eleventy
+        env:
+          ELEVENTY_ENV: production
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

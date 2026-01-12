@@ -10,8 +10,11 @@
   />
   <meta name="author" content="DBML 2026 Organizing Committee" />
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://dataintelligencecrew.github.io/dbml26/" />
+
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/assets/ico/favicon.ico" />
+  <link rel="shortcut icon" href="{{ '/assets/ico/favicon.ico' | url }}" />
 
   <!-- Fonts & CSS -->
   <link
@@ -32,8 +35,45 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dataintelligencecrew.github.io/dbml26/" />
+  <meta property="og:site_name" content="DBML 2026" />
   <meta property="og:title" content="DBML 2026" />
   <meta property="og:description" content="5th International Workshop on Databases and Machine Learning" />
-  <meta property="og:image" content="/dbml26/assets/images/opengraph.png" />
-  <link rel="stylesheet" href="/dbml26/assets/css/style.css" />
+  <meta property="og:image" content="https://dataintelligencecrew.github.io/dbml26/assets/images/opengraph.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DBML 2026" />
+  <meta name="twitter:description" content="5th International Workshop on Databases and Machine Learning" />
+  <meta name="twitter:image" content="https://dataintelligencecrew.github.io/dbml26/assets/images/opengraph.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "DBML 2026 - 5th International Workshop on Databases and Machine Learning",
+    "description": "5th International Workshop on Databases and Machine Learning, in conjunction with ICDE 2026",
+    "startDate": "2026-05",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "ICDE 2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Montréal",
+        "addressCountry": "Canada"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "DBML 2026 Organizing Committee"
+    }
+  }
+  </script>
 </head>
