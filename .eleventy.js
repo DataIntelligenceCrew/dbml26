@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/sitemap.xml");
   eleventyConfig.setBrowserSyncConfig({ files: './_site/assets/**/*' });
 
   return {
@@ -7,7 +8,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       includes: "_includes",
       layouts: "_includes/layouts",
-      output: "docs"
+      output: "_site"
     },
     templateFormats: ["njk", "html", "md"],
     htmlTemplateEngine: "njk",
