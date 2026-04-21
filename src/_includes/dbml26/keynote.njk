@@ -7,40 +7,34 @@
     <div class="col-md-12 margin-top-3">
       <div class="pr-4 pl-5">
 
-        <p class="text-center mb-4">
-          Details on the keynote speakers for DBML 2026 will be announced soon.
-        </p>
+        <div class="row justify-content-center text-left">
 
-        <!--
-        <div class="row justify-content-center text-center">
+          <div class="col-md-10 mb-5">
+            <h4 class="h5 mb-1">Amir Shaikhha</h4>
+            <p class="mb-2 text-muted"><em>Details to be announced.</em></p>
+          </div>
 
-          <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/assets/img/speakers/placeholder1.jpg"
-                 alt="Speaker 1 photo"
-                 class="img-fluid rounded-circle mb-3"
-                 style="max-width: 160px;">
-            <h4 class="h5 mb-1">Speaker Name (TBD)</h4>
-            <p class="mb-1"><em>Affiliation / Institution (TBD)</em></p>
+          <div class="col-md-10 mb-5">
+            <h4 class="h5 mb-1">Oana Balmau</h4>
+            <p class="mb-2 text-muted"><em>Details to be announced.</em></p>
+          </div>
+
+          <div class="col-md-10 mb-5">
+            <h4 class="h5 mb-1">Amine Mhedhbi</h4>
+            <p class="mb-1"><em>Assistant Professor, &Eacute;cole Polytechnique de Montr&eacute;al</em></p>
+            <p class="mb-1"><strong>Semantic Query Processing over Relations</strong></p>
+            <p class="mb-2">
+              Language models are making it possible to ask richer questions over relational data, but doing so efficiently remains difficult. Join-heavy queries, often over networked data, can produce large intermediate results that must be serialized into prompts and then fed into language models. This talk presents FFX (Fast Factorized eXecution), a query engine that combines factorized and vectorized execution to address this bottleneck.
+            </p>
+            <p class="mb-2">
+              The talk focuses on how FFX changes semantic query processing by keeping join intermediates compact, enabling semantic operators to serialize factorized intermediates and predict over their implied Cartesian products. Operators then produce predictions as flat output tuples and bypass having to first flatten the input relation. Empirically, and somewhat surprisingly, our evaluation shows that even non-reasoning models can often perform this Cartesian expansion accurately while still carrying out the semantic task. In our evaluation, FFX achieves an order-of-magnitude reduction in input tokens while maintaining the same accuracy and degrades more gracefully as context size increases.
+            </p>
             <p class="small text-muted">
-              Talk Title (TBD)<br>
-              A short description or abstract of the keynote will appear here once confirmed.
+              Amine Mhedhbi is an assistant professor at &Eacute;cole Polytechnique de Montr&eacute;al. His interests are in building and analyzing analytical and AI-driven data system architectures. His work includes tackling performance considerations, debuggability, interface design, and data applications. Amine received his Ph.D. in 2023 from the University of Waterloo. His research has been awarded a VLDB best paper award, a Microsoft Ph.D. fellowship award, and the University of Waterloo's Computer Science distinguished dissertation award.
             </p>
           </div>
 
-          <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/assets/img/speakers/placeholder2.jpg"
-                 alt="Speaker 2 photo"
-                 class="img-fluid rounded-circle mb-3"
-                 style="max-width: 160px;">
-            <h4 class="h5 mb-1">Speaker Name (TBD)</h4>
-            <p class="mb-1"><em>Affiliation / Institution (TBD)</em></p>
-            <p class="small text-muted">
-              Talk Title (TBD)<br>
-              A short description or abstract of the keynote will appear here once confirmed.
-            </p>
-          </div>
-
-        </div>-->
+        </div>
       </div>
     </div>
   </div>
