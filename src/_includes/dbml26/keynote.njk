@@ -16,7 +16,14 @@
 
           <div class="col-md-10 mb-5">
             <h4 class="h5 mb-1">Oana Balmau</h4>
-            <p class="mb-2 text-muted"><em>Details to be announced.</em></p>
+            <p class="mb-1"><em>Assistant Professor, McGill University</em></p>
+            <p class="mb-1"><strong>Data pre-processing challenges in ML pipelines</strong></p>
+            <p class="mb-2">
+              Current machine learning frameworks rely on data loaders to preprocess data before feeding accelerators. Inefficient preprocessing pipelines can leave GPUs idle for long periods&mdash;up to 76% in some cases&mdash;significantly slowing training. A key issue is variability in preprocessing time across samples: existing data loaders treat all samples uniformly, so a single slow sample can stall an entire batch. In this talk, I present MinatoLoader, a general-purpose data loader implemented in PyTorch that improves GPU utilization by prioritizing fast-to-process samples while handling slower ones in parallel, enabling more efficient training on single-server, multi-GPU systems.
+            </p>
+            <p class="small text-muted">
+              Oana Balmau is an Assistant Professor in the School of Computer Science at McGill University, where she leads the DISCS Lab. She is a part of MLCommons, where she co-founded MLPerf Storage, an open-source benchmark for storage on ML workloads. Her research focuses on storage systems and data management, with an emphasis on ML, data science, and edge computing workloads. She completed her PhD in Computer Science at the University of Sydney, advised by Prof. Willy Zwaenepoel. Before her PhD, Oana earned her Bachelors and Masters degrees in Computer Science from EPFL.
+            </p>
           </div>
 
           <div class="col-md-10 mb-5">
